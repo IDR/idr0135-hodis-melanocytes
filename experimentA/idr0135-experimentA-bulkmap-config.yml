@@ -1,0 +1,75 @@
+---
+name: idr0135-hodis-melanocytes/experimentA
+version: 1
+
+defaults:
+  include: false
+  type: string
+  split:
+  includeclient: true
+  visible: true
+  omitempty: true
+
+columns:
+
+  - name: Protocol.REF
+    clientname: Protocol
+    include: true
+
+  - name: Genotype
+    clientname: Genotype
+    include: true
+
+  - name: batch
+    clientname: Batch
+    include: true
+
+
+  - group:
+      namespace: openmicroscopy.org/mapr/organism
+      columns:
+        - name: Characteristics..Organism.
+          clientname: Organism
+          include: true
+
+  - group:
+      namespace: openmicroscopy.org/mapr/gene
+      columns:
+        - name: Comment..Gene.Identifier.
+          clientname: Gene Identifier
+          include: true
+          split: ;
+        - name: Comment..Gene.Identifier.
+          clientname: Gene Identifier URL
+          clientvalue: >
+                http://www.ensembl.org/id/{{ value|urlencode }}
+          include: true
+          split: ;
+        - name: Comment..Gene.Symbol.
+          clientname: Gene Symbol
+          include: true
+          split: ;
+
+  - group:
+      namespace: openmicroscopy.org/mapr/cell_line
+      columns:
+        - name: Characteristics..Cell.Line.
+          clientname: Cell Line
+          include: true
+
+
+advanced:
+  ignore_missing_primary_key: true
+  primary_group_keys:
+    - namespace: openmicroscopy.org/mapr/organism
+      keys:
+        - Organism
+    - namespace: openmicroscopy.org/mapr/gene
+      keys:
+        - Gene Identifier
+        - Gene Symbol
+    - namespace: openmicroscopy.org/mapr/cell_line
+      keys:
+        - Cell Line
+
+
