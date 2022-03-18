@@ -29,6 +29,7 @@ with open(args.file, mode='r') as csv_file_in:
 
     with open(new_file, mode='w') as csv_file_out:
         csv_writer = csv.DictWriter(csv_file_out, fieldnames=csv_reader.fieldnames)
+        csv_writer.writeheader()
         for org_row in org_rows:
             if not args.r:
                 csv_writer.writerow(org_row)
