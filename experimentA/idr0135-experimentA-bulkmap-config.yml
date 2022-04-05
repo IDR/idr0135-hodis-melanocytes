@@ -47,65 +47,65 @@ columns:
           clientname: Gene Symbol
           include: true
 
-    - group:
-      namespace: openmicroscopy.org/mapr/gene
-      columns:
-        - name: Comment..Gene.Identifier._2
-          clientname: Gene Identifier
-          include: true
-        - name: Comment..Gene.Identifier._2
-          clientname: Gene Identifier URL
-          clientvalue: >
-                http://www.ensembl.org/id/{{ value|urlencode }}
-          include: true
-        - name: Comment..Gene.Symbol._2
-          clientname: Gene Symbol
-          include: true
+  - group:
+    namespace: openmicroscopy.org/mapr/gene
+    columns:
+      - name: Comment..Gene.Identifier._2
+        clientname: Gene Identifier
+        include: true
+      - name: Comment..Gene.Identifier._2
+        clientname: Gene Identifier URL
+        clientvalue: >
+              http://www.ensembl.org/id/{{ value|urlencode }}
+        include: true
+      - name: Comment..Gene.Symbol._2
+        clientname: Gene Symbol
+        include: true
 
-    - group:
-      namespace: openmicroscopy.org/mapr/gene
-      columns:
-        - name: Comment..Gene.Identifier._3
-          clientname: Gene Identifier
-          include: true
-        - name: Comment..Gene.Identifier._3
-          clientname: Gene Identifier URL
-          clientvalue: >
-                http://www.ensembl.org/id/{{ value|urlencode }}
-          include: true
-        - name: Comment..Gene.Symbol._3
-          clientname: Gene Symbol
-          include: true
+  - group:
+    namespace: openmicroscopy.org/mapr/gene
+    columns:
+      - name: Comment..Gene.Identifier._3
+        clientname: Gene Identifier
+        include: true
+      - name: Comment..Gene.Identifier._3
+        clientname: Gene Identifier URL
+        clientvalue: >
+              http://www.ensembl.org/id/{{ value|urlencode }}
+        include: true
+      - name: Comment..Gene.Symbol._3
+        clientname: Gene Symbol
+        include: true
 
-    - group:
-      namespace: openmicroscopy.org/mapr/gene
-      columns:
-        - name: Comment..Gene.Identifier._4
-          clientname: Gene Identifier
-          include: true
-        - name: Comment..Gene.Identifier._4
-          clientname: Gene Identifier URL
-          clientvalue: >
-                http://www.ensembl.org/id/{{ value|urlencode }}
-          include: true
-        - name: Comment..Gene.Symbol._4
-          clientname: Gene Symbol
-          include: true
+  - group:
+    namespace: openmicroscopy.org/mapr/gene
+    columns:
+      - name: Comment..Gene.Identifier._4
+        clientname: Gene Identifier
+        include: true
+      - name: Comment..Gene.Identifier._4
+        clientname: Gene Identifier URL
+        clientvalue: >
+              http://www.ensembl.org/id/{{ value|urlencode }}
+        include: true
+      - name: Comment..Gene.Symbol._4
+        clientname: Gene Symbol
+        include: true
 
-    - group:
-      namespace: openmicroscopy.org/mapr/gene
-      columns:
-        - name: Comment..Gene.Identifier._5
-          clientname: Gene Identifier
-          include: true
-        - name: Comment..Gene.Identifier._5
-          clientname: Gene Identifier URL
-          clientvalue: >
-                http://www.ensembl.org/id/{{ value|urlencode }}
-          include: true
-        - name: Comment..Gene.Symbol._5
-          clientname: Gene Symbol
-          include: true
+  - group:
+    namespace: openmicroscopy.org/mapr/gene
+    columns:
+      - name: Comment..Gene.Identifier._5
+        clientname: Gene Identifier
+        include: true
+      - name: Comment..Gene.Identifier._5
+        clientname: Gene Identifier URL
+        clientvalue: >
+              http://www.ensembl.org/id/{{ value|urlencode }}
+        include: true
+      - name: Comment..Gene.Symbol._5
+        clientname: Gene Symbol
+        include: true
 
 
   - group:
