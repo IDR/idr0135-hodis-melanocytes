@@ -12,108 +12,134 @@ defaults:
 
 columns:
 
-  - name: Protocol.REF
-    clientname: Protocol
+  - name: Characteristics [Organism Part]
+    clientname: Organism Part
     include: true
 
-  - name: Genotype
+  - name: Material Type
+    clientname: Material Type
+    include: true
+
+  - name: Experimental Condition [Cell Type]
+    clientname: Cell Type
+    include: true
+
+  - name: Comment [Cell Type Comments]
+    clientname: Cell Type Comments
+    include: true
+
+  - name: Experimental Condition [Genotype]
     clientname: Genotype
     include: true
 
-  - name: batch
+  - name: Experimental Condition [ID]
+    clientname: ID
+    include: true
+
+  - name: Experimental Condition [Batch]
     clientname: Batch
     include: true
 
 
+  ######################################################################
+  # mapr groups
+  ######################################################################
+
   - group:
       namespace: openmicroscopy.org/mapr/organism
       columns:
-        - name: Characteristics..Organism.
+        - name: Characteristics [Organism 1]
+          clientname: Organism
+          include: true
+
+  - group:
+      namespace: openmicroscopy.org/mapr/organism
+      columns:
+        - name: Characteristics [Organism 2]
           clientname: Organism
           include: true
 
   - group:
       namespace: openmicroscopy.org/mapr/gene
       columns:
-        - name: Comment..Gene.Identifier. 1
+        - name: Comment [Gene Identifier 1]
           clientname: Gene Identifier
           include: true
-        - name: Comment..Gene.Identifier. 1
+        - name: Comment [Gene Identifier 1]
           clientname: Gene Identifier URL
           clientvalue: >
                 http://www.ensembl.org/id/{{ value|urlencode }}
           include: true
-        - name: Comment..Gene.Symbol. 1
+        - name: Comment [Gene Symbol 1]
           clientname: Gene Symbol
           include: true
 
   - group:
       namespace: openmicroscopy.org/mapr/gene
       columns:
-        - name: Comment..Gene.Identifier. 2
+        - name: Comment [Gene Identifier 2]
           clientname: Gene Identifier
           include: true
-        - name: Comment..Gene.Identifier. 2
+        - name: Comment [Gene Identifier 2]
           clientname: Gene Identifier URL
           clientvalue: >
               http://www.ensembl.org/id/{{ value|urlencode }}
           include: true
-        - name: Comment..Gene.Symbol. 2
+        - name: Comment [Gene Symbol 2]
           clientname: Gene Symbol
           include: true
 
   - group:
       namespace: openmicroscopy.org/mapr/gene
       columns:
-        - name: Comment..Gene.Identifier. 3
+        - name: Comment [Gene Identifier 3]
           clientname: Gene Identifier
           include: true
-        - name: Comment..Gene.Identifier. 3
+        - name: Comment [Gene Identifier 3]
           clientname: Gene Identifier URL
           clientvalue: >
               http://www.ensembl.org/id/{{ value|urlencode }}
           include: true
-        - name: Comment..Gene.Symbol. 3
+        - name: Comment [Gene Symbol 3]
           clientname: Gene Symbol
           include: true
 
   - group:
       namespace: openmicroscopy.org/mapr/gene
       columns:
-        - name: Comment..Gene.Identifier. 4
+        - name: Comment [Gene Identifier 4]
           clientname: Gene Identifier
           include: true
-        - name: Comment..Gene.Identifier. 4
+        - name: Comment [Gene Identifier 4]
           clientname: Gene Identifier URL
           clientvalue: >
              http://www.ensembl.org/id/{{ value|urlencode }}
           include: true
-        - name: Comment..Gene.Symbol. 4
+        - name: Comment [Gene Symbol 4]
           clientname: Gene Symbol
           include: true
 
   - group:
       namespace: openmicroscopy.org/mapr/gene
       columns:
-        - name: Comment..Gene.Identifier. 5
+        - name: Comment [Gene Identifier 5]
           clientname: Gene Identifier
           include: true
-        - name: Comment..Gene.Identifier. 5
+        - name: Comment [Gene Identifier 5]
           clientname: Gene Identifier URL
           clientvalue: >
               http://www.ensembl.org/id/{{ value|urlencode }}
           include: true
-        - name: Comment..Gene.Symbol. 5
+        - name: Comment [Gene Symbol 5]
           clientname: Gene Symbol
           include: true
 
-
   - group:
-      namespace: openmicroscopy.org/mapr/cell_line
+      namespace: openmicroscopy.org/mapr/gene/supplementary
       columns:
-        - name: Characteristics..Cell.Line.
-          clientname: Cell Line
-          include: true
+      - name: Comment [Gene Annotation Comments]
+        clientname: Gene Annotation Comments
+        include: true
 
 
 advanced:
@@ -126,8 +152,4 @@ advanced:
       keys:
         - Gene Identifier
         - Gene Symbol
-    - namespace: openmicroscopy.org/mapr/cell_line
-      keys:
-        - Cell Line
-
 
