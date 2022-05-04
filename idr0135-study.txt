@@ -1,0 +1,105 @@
+# FILL IN AS MUCH INFORMATION AS YOU CAN.  HINTS HAVE BEEN PUT IN SOME FIELDS AFTER THE HASH # SYMBOL. REPLACE THE HINT WITH TEXT WHERE APPROPRIATE.													
+# STUDY DESCRIPTION SECTION											
+# Section with generic information about the study including title, description, publication details (if applicable) and contact details																				
+																				
+Comment[IDR Study Accession]	idr0135																			
+Study Title	Stepwise-edited, human melanoma models reveal mutationsÕ effect on tumor and microenvironment																			
+Study Type	histology																			
+Study Type Term Source REF																				
+Study Type Term Accession																				
+Study Description	Establishing causal relationships between genetic alterations of human cancers and the specific phenotypes of malignancy remains a challenge. We sequentially introduced mutations into healthy human melanocytes in up to five genes spanning six commonly disrupted melanoma pathways forming nine genetically distinct cellular models of melanoma. We connected mutant melanocyte genotypes to malignant cell expression programs in vitro and in vivo, replicative immortality, malignancy, rapid tumor growth, pigmentation, metastasis, and histopathology. Mutations in malignant cells also affected tumor microenvironment composition and cell states. Our melanoma models shared genotype-associated expression programs with patient melanomas, and a deep learning model showed they partially recapitulated genotype-associated histopathological features as well. Thus, a progressive series of genome-edited, human cancer models can causally connect genotypes carrying multiple mutations to phenotype.																			
+Study Key Words	Genotype-to-Phenotype	Melanoma	Mutations	Histopathological features																			
+Study Organism	Homo sapiens	Mus musculus																		
+Study Organism Term Source REF	NCBITaxon	NCBITaxon																	
+Study Organism Term Accession	9606	10090																				
+Study Experiments Number	1																			
+Study External URL	https://codeocean.com/capsule/9921736/tree 	
+
+Study BioImage Archive Accession																		
+Study Public Release Date	2022-05-05																			
+																				
+# Study Publication																				
+Study PubMed ID	35482859																			
+Study Publication Title	Stepwise-edited, human melanoma models reveal mutations' effect on tumor and microenvironment																			
+Study Author List	Hodis E, Torlai Triglia E, Kwon JYH, Biancalani T, Zakka LR, Parkar S, HŸtter JC, Buffoni L, Delorey TM, Phillips D, Dionne D, Nguyen LT, Schapiro D, Maliga Z, Jacobson CA, Hendel A, Rozenblatt-Rosen O, Mihm Jr MC, Garraway LA, Regev A																		
+Study PMC ID																				
+Study DOI	https://doi.org/10.1126/science.abi8175																			
+																				
+# Study Contacts																				
+Study Person Last Name	Hodis	Torlai Triglia																		
+Study Person First Name	Eran	Elena																		
+Study Person Email	Eran_Hodis@dfci.Harvard.edu	etorlait@broadinstitute.org																		
+Study Person Address	Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA	Broad Institute of MIT and Harvard, Cambridge, MA 02142, USA																		
+Study Person ORCID	0000-0002-5651-4268	0000-0002-6059-0116																		
+Study Person Roles	first author	first author																		
+																				
+# Study License and Data DOI																				
+Study License	CC BY 4.0																			
+Study License URL	https://creativecommons.org/licenses/by/4.0/																			
+Study Copyright	Hodis, Torlai Triglia et al																		
+Study Data Publisher	University of Dundee																			
+Study Data DOI																				
+																				
+Term Source Name	NCBITaxon	EFO	CMPO	FBbi																
+Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/																
+																				
+																				
+# EXPERIMENT SECTION																				
+# Experiment Section containing all information relative to each experiment in the study including materials used, protocols names and description, phenotype names and description. For multiple experiments this section should be repeated.  Copy and paste the whole section below and fill out for the next experiment																						
+Experiment Number	1																			
+Comment[IDR Experiment Name]	idr0135-hodis-melanocytes/experimentA	
+
+Experiment Sample Type	tissue																		
+Experiment Description	After euthanizing the mice, solid tumors were collected and fixed with 10% formalin (Patterson Veterinary) for 24 hours. Samples were subsequently transferred into 70% ethanol and submitted to the Histology Core at the Koch Institute for paraffin embedding, in 3 batches, the paraffin blocks were subjected to tissue sectioning, Hematoxylin & Eosin (H&E) staining and digital whole slide scanning.																			
+Experiment Size	5D Images: 	Average Image Dimension (XYZCT):	Total Tb: 0.070 TB													
+Experiment Example Images																			
+Experiment Imaging Method	bright-field microscopy																			
+Experiment Imaging Method Term Source REF	Fbbi																			
+Experiment Imaging Method Term Accession	FBbi_00000243																	
+Experiment Organism																				
+Experiment Organism Term Source REF																				
+Experiment Organism Term Accession																				
+Experiment Comments	H&E staining, digital whole slide scanning (40x).	Batch described as L39 in the Assay and Final file. One slide 'Eran Hodis 2020-09-14-012.svs', contains tumors from Multiple genotypes and its predictions were not included in the associated publication.	Batch described as L40 in the Assay and Final file. One slide '2020-09-12\EH-15740-048.svs', contains tumors from Multiple genotypes and its predictions were not included in the associated publication. Two slides (CBTP EH 221-224 X4 and CBTP EH 123 XR) were not processed in the second experimental replicate. The slide related to sample CBTPA EH 283 XLR ('2020-09-12\EH-15740-001.svs') has not been analyzed in the associated publication.	Batch described as L41 in the Assay and Final file. One slide 'Eran Hodis 2020-09-15-012.svs', contains tumors from Multiple genotypes and its predictions were not included in the associated publication. Three slides (CBT3 EH 102 XR,  CBTP EH 209 XR and CBTP EH 207/208 XL) were not processed in the third experimental replicate.	
+
+
+# assay files								
+Experiment Assay File	idr0135-experimentA-annotations							
+Experiment Assay File Format	tab-delimited text							
+Assay Experimental Conditions								
+Assay Experimental Conditions Term Source REF								
+Assay Experimental Conditions Term Accession								
+Quality Control Description												
+				
+
+# Protocols																																	
+Protocol Name	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol																													
+Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol																													
+Protocol Type Term Source REF	EFO	EFO																															
+Protocol Type Term Accession	EFO_0003789	EFO_0003969																											
+Protocol Description	Primary human melanocytes engineered to bear specific combinations of mutations were injected intradermally in the flanks of NSG mice. 	Genetic engineering.	H&E staining, digital whole slide scanning (40x) at Koch Institute Histology Core.	Machine learning classifier - please see methods of associated publication.																
+																				
+# Phenotypes																				
+Phenotype Name	Tumor genotype was predictable by histological features.																			
+Phenotype Description	Machine learning classifier. 																			
+Phenotype Score Type	Automatic																			
+Phenotype Term Source REF	CMPO																			
+Phenotype Term Name																			
+Phenotype Term Accession			 																	
+																				
+																				
+# Feature Level Data Files (give individual file details unless there is one file per well)																				
+Feature Level Data File Name																				
+Feature Level Data File Format																				
+Feature Level Data File Description																				
+Feature Level Data Column Name																		
+Feature Level Data Column Description																			
+																				
+#  Processed Data Files 																				
+Processed Data File Name	Hodis_TorlaiTriglia_processed_file_df_merged_1004.txt																			
+Processed Data File Format	tab-delimited text																			
+Processed Data File Description	Classifier prediction per whole slide image																			
+Processed Data Column Name	filename	wsi_name	genotype	wsi_id	batch	animal_id	dissected_region	is_CBTP_old	is_train	is_test	CBT	CBT3	CBTA	CBTP	CBTP3	CBTPA	wsi_pred	entropy	certainty	no_of_conn
+Processed Data Column Type	data	data	phenotype	data	experimental condition	data	experimental condition	experimental condition	experimental condition	experimental condition	data	data	data	data	data	data	data	data	data	data
+Processed Data Column Annotation Level	image	image	image	image	image	image	image	image	image	image	image	image	image	image	image	image	image	image	image	image
+Processed Data Column Description	Whole-slide image (WSI) path	WSI name	Genotype of  the melanocytes xenografted	Combination of WSI name and genotype	Batch ID	"Number identifying the mouse injected. Some blocks include information from tumors from different mice (e.g. mouse A and B, in the format A-B). "	"How many tumor pieces are there and flank where the injection was made. Possible values and associated description: XL or XL1 -> block with tumor from left flank, XR or XR1 -> block with tumor from right flank, XLR -> block with tumors from both left and right flank  , XLR1 or XLR2 -> block with tumor, notes do not say if tumors is from left or right flank, X4 -> block with tumors from both flanks of two mice (same genotype), TMA01 -> Block with a tumor with different genotypes"	True if tumor was harvested after 6months of growth in mouse	True if tiles from this WSI were used in training	True if tiles from this WSI were used in testing	"Only for WSIs used in testing, prediction probability of CBT genotype"	"Only for WSIs used in testing, prediction probability of CBT3 genotype"	"Only for WSIs used in testing, prediction probability of CBTA genotype"	"Only for WSIs used in testing, prediction probability of CBTP genotype"	"Only for WSIs used in testing, prediction probability of CBTP3 genotype"	"Only for WSIs used in testing, prediction probability of CBTPA genotype"	Genotype predicted for this WSI	Entropy of prediction	Binary classification based on Entropy	Number of connected component present in the WSI (Note: results at the Connected component level are presented in the associated manuscript)
+Processed Data Column Link To Assay File	filename																			
